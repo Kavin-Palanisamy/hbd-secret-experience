@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-cormorant: 'Cormorant Garamond', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --font-handwriting: 'Alex Brush', cursive;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #030305;
+    color: #f3f4f6;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.font-cormorant {
+  font-family: var(--font-cormorant);
+}
+
+.font-handwriting {
+  font-family: var(--font-handwriting);
+}
+
+/* Custom glow utilities */
+.text-glow-gold {
+  text-shadow: 0 0 15px rgba(251, 191, 36, 0.4), 0 0 35px rgba(245, 158, 11, 0.2);
+}
+
+.text-glow-white {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.2);
+}
+
+.box-glow-gold {
+  box-shadow: 0 0 30px rgba(251, 191, 36, 0.2), 0 0 60px rgba(217, 119, 6, 0.1);
+}
+
+.box-glow-orb {
+  box-shadow: 0 0 40px rgba(251, 191, 36, 0.35), 0 0 80px rgba(245, 158, 11, 0.2), inset 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+/* Hide scrollbars for cinematic immersion while allowing scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

@@ -1,0 +1,11 @@
+{
+  "name": "ONE MORE CHAPTER",
+  "description": "An innovative interactive birthday experience celebrating life's moments and new beginnings.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
+
